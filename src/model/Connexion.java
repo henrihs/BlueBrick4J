@@ -1,7 +1,5 @@
 package model;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlID;
@@ -34,11 +32,15 @@ public class Connexion {
 	
 	@Override
 	public String toString(){
-		return "Connexion: ".
-				concat("\nId: ").
-				concat(id).
-				concat("\nLinkedTo: ").
-				concat(linkedTo.getId()).
-				concat("\n");
+		String s = "Connexion: ".
+				concat("\n Id: ").
+				concat(id);
+		if (linkedTo != null) {
+			s += ("\n LinkedTo: ").
+					concat(linkedTo.getId()).
+					concat("\n");
+		}
+		
+		return s;
 	}
 }

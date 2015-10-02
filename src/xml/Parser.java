@@ -13,7 +13,7 @@ public class Parser {
 	public static void main(String[] args) {
 		try {
 			
-			File file = new File("C:\\Users\\henrihs\\Documents\\Traintracks\\station.bbm");
+			File file = new File("resources/testmap.bbm");
 			JAXBContext jaxbContext = JAXBContext.newInstance(Map.class);
 			
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
