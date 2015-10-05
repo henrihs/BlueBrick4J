@@ -8,20 +8,25 @@ import javax.xml.bind.Unmarshaller;
 
 import model.Map;
 
-public class Parser {
+public class BlueBrickParser {
 	
 	public static void main(String[] args) {
-		try {
-			
-			File file = new File("C:\\Users\\henrihs\\Documents\\Traintracks\\station.bbm");
+		System.out.println(loadMapFromFile("demomap.bbm"));
+	}
+	
+	public static Map loadMapFromFile(String path) {
+		Map map = null;
+		try {			
+			File file = new File(path);
 			JAXBContext jaxbContext = JAXBContext.newInstance(Map.class);
 			
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-			Map map = (Map)jaxbUnmarshaller.unmarshal(file);
-			System.out.println(map.toString());
+			map = (Map)jaxbUnmarshaller.unmarshal(file);
 			
 		} catch (JAXBException e) {
 			e.printStackTrace();
 		}
+		
+		return map;
 	}
 }
