@@ -1,4 +1,4 @@
-package xml;
+package bluebrick4j;
 
 import java.io.File;
 
@@ -6,7 +6,7 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
-import model.Map;
+import bluebrick4j.model.Map;
 
 public class BlueBrickParser {
 	
