@@ -1,4 +1,4 @@
-package bluebrick4j;
+package bluebrick4j.conversion;
 
 import java.io.File;
 
@@ -8,7 +8,7 @@ import javax.xml.bind.Unmarshaller;
 
 import bluebrick4j.model.Map;
 
-public class BlueBrickParser {
+public class BbmParser {
 	
 	public static void main(String[] args) {
 		System.out.println(loadMapFromFile("demomap.bbm"));
