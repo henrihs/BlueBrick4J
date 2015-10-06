@@ -5,7 +5,7 @@ A reader for *.bbm files generated from the BlueBrick LEGO Layout Editor, using 
 Takes *.bbm files as inputs and from it creates a Java object structure.
 
 ## Example usage
-Here's a quick reference on how to use the parser to add all the <Brick> elements in a .bbm file into an ArrayList in Java.
+Here's a quick reference on how to use the parser to add all the \<Brick\> elements in a .bbm file into an ArrayList in Java.
 
 ```java
 import bluebrick4j.conversion.BbmParser;
