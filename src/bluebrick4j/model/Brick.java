@@ -1,5 +1,6 @@
 package bluebrick4j.model;
 
+import java.util.UnknownFormatConversionException;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlID;
@@ -53,5 +54,20 @@ public class Brick {
 		}
 		
 		return s;
+	}
+
+	public BrickType getBrickType() {
+		switch (String.valueOf(partNumber)) {
+		case "2859.8":
+			return BrickType.RIGHTHANDPOINTSWITCH;
+		case "2861.8":
+			return BrickType.LEFTHANDPOINTSWITCH;
+		case "2865.8":
+			return BrickType.STRAIGHT;
+		case "2867.8":
+			return BrickType.CURVED;
+		default:
+			throw new UnknownFormatConversionException("Part number not recognized (" + (partNumber) + ")");
+		}
 	}
 }
