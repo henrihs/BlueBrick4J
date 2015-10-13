@@ -1,4 +1,4 @@
-package model;
+package bluebrick4j.model;
 
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
@@ -33,14 +33,13 @@ public class Connexion {
 	@Override
 	public String toString(){
 		String s = "Connexion: ".
-				concat("\n Id: ").
-				concat(id);
+					concat("\nId: ").
+					concat(id);
 		if (linkedTo != null) {
-			s += ("\n LinkedTo: ").
-					concat(linkedTo.getId()).
-					concat("\n");
+			s += ("\nLinkedTo: ").
+			concat(linkedTo.getId()).
+			concat("\n");
 		}
-		
 		return s;
 	}
 }

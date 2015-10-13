@@ -1,4 +1,4 @@
-package model;
+package bluebrick4j.model;
 
 import java.util.List;
 
