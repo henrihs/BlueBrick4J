@@ -1,5 +1,7 @@
 package bluebrick4j.model;
 
+import java.io.Serializable;
+
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlID;
@@ -7,7 +9,7 @@ import javax.xml.bind.annotation.XmlIDREF;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement ( name = "Connexion" )
-public class Connexion {
+public class Connexion implements Serializable {
 	private String id;
 	private Connexion linkedTo;
 	

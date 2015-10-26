@@ -1,5 +1,6 @@
 package bluebrick4j.model;
 
+import java.io.Serializable;
 import java.util.UnknownFormatConversionException;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
@@ -7,7 +8,7 @@ import javax.xml.bind.annotation.XmlID;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement ( name = "Brick" )
-public class Brick {
+public class Brick implements Serializable {
 	
 	private String id;
 	private double partNumber;

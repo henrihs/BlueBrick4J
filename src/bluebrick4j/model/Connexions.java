@@ -1,12 +1,13 @@
 package bluebrick4j.model;
 
+import java.io.Serializable;
 import java.util.List;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement ( name = "Connexions" )
-public class Connexions {
+public class Connexions implements Serializable {
 
 	private List<Connexion> connexions;
 

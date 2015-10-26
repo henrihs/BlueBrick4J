@@ -1,12 +1,13 @@
 package bluebrick4j.model;
 
+import java.io.Serializable;
 import java.util.List;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement ( name = "Bricks" )
-public class Bricks {
+public class Bricks implements Serializable {
 	
 	private List<Brick> bricks;
 	

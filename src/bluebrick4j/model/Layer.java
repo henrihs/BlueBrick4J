@@ -1,11 +1,13 @@
 package bluebrick4j.model;
 
+import java.io.Serializable;
+
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement ( name = "Layer" )
-public class Layer {
+public class Layer implements Serializable {
 	private String type;
 	private Bricks bricks;
 
