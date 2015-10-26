@@ -40,7 +40,7 @@ public class Connexion implements Serializable {
 		if (linkedTo != null) {
 			s += ("\nLinkedTo: ").
 			concat(linkedTo.getId()).
-			concat("\n");			
+			concat("\n");
 		}
 		return s;
 	}
