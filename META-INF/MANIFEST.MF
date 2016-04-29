@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: BlueBrick4J
+Bundle-SymbolicName: BlueBrick4J
+Bundle-Version: 1.0.0
+Export-Package: bluebrick4j.api,
+ bluebrick4j.model
+Import-Package: javax.xml.bind
